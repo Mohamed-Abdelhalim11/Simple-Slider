@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Simple Slider</title>
+</head>
+<body>
+
+  <div class="slider-container">
+    <!-- Testimonial Slides -->
+    <div class="testimonial active">
+      "This platform helped us showcase client feedback professionally and increased trust in our services."
+    </div>
+    <div class="testimonial">
+      "An amazing tool for organizing and gathering client reviews with ease."
+    </div>
+    <div class="testimonial">
+      "Fantastic experience! Managing client feedback has become much easier and more efficient."
+    </div>
+    
+    <!-- Navigation Arrows -->
+    <div class="nav-arrow left-arrow" onclick="prevTestimonial()">&#10094;</div>
+    <div class="nav-arrow right-arrow" onclick="nextTestimonial()">&#10095;</div>
+
+    <!-- Pagination Dots -->
+    <div class="pagination-dots">
+      <span class="pagination-dot active" onclick="goToTestimonial(0)"></span>
+      <span class="pagination-dot" onclick="goToTestimonial(1)"></span>
+      <span class="pagination-dot" onclick="goToTestimonial(2)"></span>
+    </div>
+  </div>
+
+<script src="main.js"></script>
+</body>
+</html>
